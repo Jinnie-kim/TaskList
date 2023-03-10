@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
-import RadioButtonUncheckedRoundedIcon from '@mui/icons-material/RadioButtonUncheckedRounded';
+import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 
@@ -36,7 +36,7 @@ const TaskList = () => {
         {taskLists.map((taskList) => {
           return (
             <li key={taskList.id} css={taskListStyle}>
-              <RadioButtonUncheckedRoundedIcon />
+              <RadioButtonUncheckedIcon />
               <p>{taskList.task}</p>
               <button type="button" css={taskListButtonStyle}>
                 <ExpandMoreIcon />
